@@ -55,6 +55,9 @@ The `consumer.py` script listens to the Kafka topic for new messages, extracts t
 - `consumer.py`: Script to consume data from Kafka and write to files.
 - `received_messages/`: Directory where the consumer script saves output files.
 
+## Contributing
+Contributions to this project are welcome! Please fork the repository, make your changes, and submit a pull request.
+
 ## Usage Example
 Running both the producer and the consumer will provide you with real-time data from Spotify:
    
@@ -65,8 +68,7 @@ Running both the producer and the consumer will provide you with real-time data 
    ### Terminal window 1:
    python3 consumer.py
 
-## Contributing
-Contributions to this project are welcome! Please fork the repository, make your changes, and submit a pull request.
+
 
 
 
