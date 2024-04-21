@@ -27,7 +27,52 @@ The `consumer.py` script listens to the Kafka topic for new messages, extracts t
 
 ### Installation
 1. Clone the repository to your local machine.
+   ```bash
+   git clone <repository-url>  
 2. Install the required Python packages:
    ```bash
    pip install -r requirements.txt
+
+### Configuring the Scripts
+
+- Set your Spotify API credentials in `producer.py`. Replace `your_client_id` and `your_client_secret` with your actual credentials.
+
+### Running the Producer
+
+1. Ensure Kafka is running.
+2. Run the `producer.py` script to fetch and send data to Kafka:
+   ```bash
+   python3 producer.py
+
+
+### Running the Consumer
+
+1. Run the `consumer.py` script to consume messages from Kafka:
+   ```bash
+   python3 consumer.py
+
+2. Check the `received_messages` directory for text files containing the fetched data.
+
+## Project Structure
+
+- `producer.py`: Script to fetch data from Spotify's API and send it to Kafka.
+- `consumer.py`: Script to consume data from Kafka and write to files.
+- `received_messages/`: Directory where the consumer script saves output files.
+
+## Usage Example
+
+Running both the producer and the consumer will provide you with real-time data from Spotify:
+   ### Terminal window 1:
+   ```bash
+   python3 producer.py
+
+   ### Terminal window 1:
+   python3 consumer.py
+
+## Contributing
+
+Contributions to this project are welcome! Please fork the repository, make your changes, and submit a pull request.
+
+
+
 
